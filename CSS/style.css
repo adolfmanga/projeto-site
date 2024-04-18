@@ -16,9 +16,6 @@ padding: 0;
     --burly: #DEB887;
 }
 
-
-/*PRATOS | WILLIAM*/
-
 /*topo*/
 .titulo {
     text-align: center;
@@ -29,7 +26,7 @@ background-color: var(--navajo);
 text-align: center;
 font-family: "Raleway", cursive;
 margin-bottom: 15px;
-color: var(--Red);
+color: var(--black);
 border-radius: 10px;
 margin: 15px;
 padding: 5px;
@@ -50,13 +47,17 @@ text-transform: uppercase;
     font-size: 19px;;
     list-style: none;
 }
-
+/* topo */
 .topo-do-site {
-background-color: var(--burly);
+    background-color: var(--burly);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.banner-container img {
-width: 20%;;
+.topo-do-site img {
+    width: 150px;
+    max-height: auto;
 }
 
 /*Corpo*/
@@ -65,17 +66,15 @@ max-width: 250px;
 }
 
 .section-container {
-    display: flex;
-gap: 15px;
-
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 100px;
+        text-align: center;
 }
 
-
-
-/*DRINKS | FRANCISCO*/
-
-.topo-drinks {
-background-image: url(drinks-background.jpg);
-
-
+.product-price {
+    font-size: 20px;
+    color: var(--Red);
+    font-weight: bold;
+    margin-bottom: 10px;
 }
